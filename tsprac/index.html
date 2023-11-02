@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-Do List</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
@@ -17,17 +18,24 @@
         </div>
         <div id="task">
             <input type="text" id="task-input" placeholder="Thêm ghi chú">
+            <button id="btnOK">ok</button>
         </div>
         <div id="listTask">
 
             <h1 id="name2">TASKS</h1>
 
             <h2 id="name3"><img src="image/1piece.png"></h2>
-            <hr>
 
-            <ul id="listNote">
+            <ol id="listNote">
 
-            </ul>
+            </ol>
+        </div>
+
+        <div id="taskDone">
+            <h1 id="name4">done</h1>
+            <ol id="listDone">
+
+            </ol>
         </div>
     </div>
     <script src="index.js"> </script>

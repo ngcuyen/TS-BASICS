@@ -1,7 +1,7 @@
 .all {
     background-color: beige;
     margin: 0;
-    height: 100%;
+    min-height: 100%;
     width: 100%;
     padding: 0;
     display: flex;
@@ -9,20 +9,42 @@
 
 }
 
+body {
+    height: 100%;
+    width: 100%;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
 
 #task-input {
     width: 300px;
     height: 40px;
     font-size: 16px;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 3px;
+
+    display: block;
+    margin: 10px auto;
+    margin-top: 10;
 }
 
-#task-input {
+#btnOK {
+    width: 70px;
+    height: 30px;
+    font-size: 16px;
+    padding: 1px;
+    border-radius: 5px;
+
     display: block;
     margin: 0 auto;
     margin-top: 10;
+    justify-content: center;
+    background-color: bisque;
 }
+
 
 #tieude {
     height: 120px;
@@ -45,6 +67,7 @@
 
 #task {
     margin-top: 20px;
+    align-items: center;
 }
 
 #name2 {
@@ -59,7 +82,7 @@
 #listTask {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     flex-direction: column;
 }
 
@@ -73,8 +96,98 @@
 }
 
 #listNote li {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
     font-size: 20px;
     color: darkgoldenrod;
-    padding: 15px;
+    list-style: none;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+    background-color: white;
+    width: 300px;
+    height: 40px;
+    border-radius: 30px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+#taskDone {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+}
+
+
+#taskDone h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: darkcyan;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+
+
+#listDone li {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    color: darkgoldenrod;
+    list-style: none;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+    background-color: white;
+    width: 300px;
+    height: 40px;
+    border-radius: 30px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.icon {
+
+    margin-right: 2px;
+    margin-left: auto;
+}
+
+#name4 {
+    display: none;
+}
+
+.icon:hover {
+    background-color: antiquewhite;
+    padding: 2px;
+    border-radius: 10px;
+    display: flex;
+    margin-right: 0;
+}
+
+.editIcon:hover {
+    background-color: antiquewhite;
+    padding: 2px;
+    border-radius: 10px;
+}
+
+.doneIcon:hover {
+    background-color: antiquewhite;
+    padding: 2px;
+    border-radius: 10px;
 }

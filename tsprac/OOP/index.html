@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <label for="title" class="text">Thông tin nhân viên</label>
+        <div class="d-flex justify-content-center">
+
+            <form class="w-50">
+
+                <div class="mb-3">
+                    <label for="inputId" class="form-label">Mã nhân viên</label>
+                    <input type="idEmp" class="form-control" id="inputIdEmp">
+                </div>
+                <div class="mb-3">
+                    <label for="inputName" class="form-label">Họ tên</label>
+                    <input type="name" class="form-control" id="inputNameEmp">
+                </div>
+                <div class="mb-3">
+                    <label for="inputSalary" class="form-label">LCB</label>
+                    <input type="salary" class="form-control" id="inputSalEmp">
+                </div>
+                <div class="mb-3">
+                    <label for="display-type" class="form-label">Loại NV:</label>
+                </div>
+                <div class=" form-check form-check-inline">
+
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                        value="option1">
+                    <label class="form-check-label" for="inlineRadio1">Sếp</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                        value="option2">
+                    <label class="form-check-label" for="inlineRadio2">Quản lý</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                        value="option3">
+                    <label class="form-check-label" for="inlineRadio3">Thường</label>
+                </div>
+
+                <div class="mb-3 col-3">
+                    <button type="button" class="btn btn-primary w-100">Thêm NV</button>
+
+                </div>
+                <div class="mb-3 col-3">
+                    <button type="button" class="btn btn-primary w-100">Xuất thông tin NV</button>
+                </div>
+            </form>
+
+        </div>
+        <label for="title1" class="text">Danh sách nhân viên</label>
+        <div class="d-flex justify-content-center w-100">
+            <table class="table w-50" id="tbl-nhan-vien">
+                <thead>
+                    <tr>
+                        <th scope="col">Mã NV</th>
+                        <th scope="col">Họ tên</th>
+                        <th scope="col">Lương CB</th>
+                        <th scope="col">Loại NV</th>
+                        <th scope="col">Lương*Hệ số</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Nguyễn Văn A</td>
+                        <td>500</td>
+                        <td>Nhân viên</td>
+                        <td>500</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Nguyễn Văn B</td>
+                        <td>1000</td>
+                        <td>Quản lý</td>
+                        <td>1500</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Nguyễn Văn C</td>
+                        <td>1500</td>
+                        <td>Quản lý</td>
+                        <td>4500</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="employee.js"></script>
+</body>
+
+</html>
